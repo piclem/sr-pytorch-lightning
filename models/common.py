@@ -122,6 +122,7 @@ class UpscaleBlock(nn.Sequential):
         kernel_size=3,
         act: nn.Module = None
     ):
+        print(scale_factor)
         assert scale_factor in {2, 3, 4, 8}
 
         layers = []
